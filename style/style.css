@@ -1,0 +1,91 @@
+/* CSS RESET - do not remove */
+/* Reset default browser styles and provide a consistent starting point */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: black;
+  }
+  
+  /*  Set the font */
+  body {
+    font-family: "Roboto", sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #F2F4FC;
+  }
+
+.navbar {
+    box-sizing: border-box;
+    height: 122px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: fixed;
+}
+
+.navbar ul {
+    list-style-type: none;
+    float: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+#circle-logo {
+    float: left;
+    width: 60px;
+}
+
+#contact-button {
+    width: 150px;
+    height: 52px;
+    margin: 0;
+    background-color: #072AC8;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#contact-button p {
+    color: white;
+}
+
+.hero {
+    position: relative;
+    width: 1100px;
+    top: 222px;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.hero-left {
+    width: 530px;
+}
+
+.hero-right {
+    background: url('../project-assets/hero-section/hero-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 570px;
+}
+
+#hero-cards {
+    width: 290px;
+    height: 316px;
+    padding: 0;
+}
