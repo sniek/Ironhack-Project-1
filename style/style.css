@@ -21,19 +21,34 @@ html {
   /*  Set the font */
   body {
     font-family: "Roboto", sans-serif;
-    max-width: 1440px;
-    margin: 0 auto;
+    width: 100%;
     background-color: #F2F4FC;
   }
+
+.center {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #292E47;
+}
+
+p {
+    color: #6B708D;
+    font-size: 20px;
+}
 
 .navbar {
     box-sizing: border-box;
     height: 122px;
     width: 1100px;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: end;
-    position: fixed;
 }
 
 .navbar ul {
@@ -67,25 +82,133 @@ html {
 .hero {
     position: relative;
     width: 1100px;
-    top: 222px;
+    top: 70px;
     display: flex;
-    flex-flow: column wrap;
-
+    flex-flow: row wrap;
+    margin-bottom: 300px;
 }
 
 .hero-left {
     width: 530px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-right: 80px;
 }
 
 .hero-right {
     background: url('../project-assets/hero-section/hero-image.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 570px;
+    height: 650px;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
 }
 
 #hero-cards {
-    width: 290px;
-    height: 316px;
+    width: 350px;
     padding: 0;
+}
+
+.hero-top-left {
+    margin-left: -80px;
+}
+
+.hero-bottom-right {
+    align-self: flex-end;
+    margin-left: 30px;
+    margin-bottom: -100px;
+}
+
+.hero-left h1 {
+    margin-bottom: 50px;
+}
+
+.hero-left p {
+    margin-bottom: 50px;
+}
+
+.hero-left ul {
+    list-style-type: none;
+}
+
+.hero-left ul li {
+    display: inline;
+    margin-right: 60px;
+    width: 150px;
+    font-size: 17px;
+    color: #6B708D;
+}
+
+#touch-button {
+    width: 150px;
+    height: 52px;
+    background-color: #072AC8;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.clients {
+    width: 1100px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    filter: grayscale(100%);
+    margin-bottom: 200px;
+}
+
+.projects {
+    width: 1100px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.projects h2 {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.projects h3 {
+    margin: 20px;
+    color: #292E47;
+}
+
+.projects p {
+    font-size: 0.9em;
+    margin: 20px;
+    margin-bottom: 70px;
+}
+
+.projects-card {
+    width: 340px;
+    height: 444px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.3) 8px 20px 24px;
+}
+
+.projects-card img {
+    width: 340px;
+    height: 240px;
+}
+
+.projects-card a {
+    margin: 20px;
+}
+
+.testimonial {
+    position: relative;
+    width: 1320px;
+    height: 622px;
+    background-color: #292E47;
+    background-image: url('../project-assets/testimonial-section/orbit.png');
+    background-size: contain;
+    margin-left: -110px;
+    margin-bottom: 100px;
 }
