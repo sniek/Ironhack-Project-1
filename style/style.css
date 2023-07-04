@@ -26,8 +26,8 @@ html {
   }
 
 .center {
-    width: 1320px;
-    margin: 0 auto;
+    max-width: 960px;
+    margin: auto;
 }
 
 h1 {
@@ -167,7 +167,7 @@ p {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .projects h2 {
@@ -210,5 +210,223 @@ p {
     background-image: url('../project-assets/testimonial-section/orbit.png');
     background-size: contain;
     margin-left: -110px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#memoji {
+    width: 150px;
+}
+
+#profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.test-left {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 60px;
+    width: 20%;
+}
+
+.test-right {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 60px;
+    width: 20%;
+}
+
+.test-middle {
+    width: 60%;
+    padding: 100px 50px 100px 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.test-middle h2 {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.test-middle p {
+    color: #FFC600;
+    font-size: 24px;
+}
+
+.test-profile {
+    color: white;
+    width: 171px;
+    height: 50px;
+    margin: 0 auto;
+}
+.test-profile img {
+    float: left;
+}
+
+.test-profile h5 {
+    color: #A2D6F9;
+    font-size: 1.05em;
+    float: right;
+    padding-top: 5px;
+}
+
+.test-profile a {
+    color: white;
+    text-decoration: none;
+}
+
+.services {
+    width: 1100px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.services h2 {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.services-card {
+    width: 340px;
+    height: 380px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.3) 8px 20px 24px;
+    padding: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.service-card-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ECF7FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card-img img {
+    width: 50px;
+    height: 50px;
+}
+
+.cta-section {
+    position: relative;
+    width: 1320px;
+    height: 500px;
+    background-color: #FFC600;
+    margin-left: -110px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-section h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    margin-bottom: 60px;
+}
+
+.cta-section input {
+    width: 340px;
+    height: 80px;
+    border: 0px;
+}
+
+.mail-input {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.mail-inner-input {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.mail-inner-input input {
+    font-size: 17px;
+}
+
+#mail-icon {
+    height: 80px;
+    width: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+}
+
+.cta-section button {
+    width: 200px;
+    height: 80px;
+    background-color: #072AC8;
+    color: white;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.footer {
+    width: 1100px;
+    height: 112px;
+    display: flex;
+    flex-flow: row wrap;
     margin-bottom: 100px;
+}
+
+.footer-left {
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.footer-left img {
+    width: 100px;
+}
+
+.footer-right {
+    width: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.footer-right-top {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: end;
+}
+
+.footer-right-top p {
+    margin-left: 80px;
+}
+
+.footer-right-bottom {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: end;
+}
+
+.footer-right-bottom p {
+    margin-left: 70px;
 }
