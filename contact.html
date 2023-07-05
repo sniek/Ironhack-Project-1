@@ -7,6 +7,62 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <header class="center">
+        <nav class="navbar">
+            <img src="project-assets/logos/circle.svg" alt="circle logo" id="circle-logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+            <a href="contact.html">
+                <div id="contact-button">
+                    <p>Contact Us</p>
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    <main class="center">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <form action="">
+                <label for="fname">Full Name*</label>
+                <input type="text" name="fullname" id="fname" placeholder="Enter your full name">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+
+                <label for="phone">Phone</label>
+                <input type="number" name="phonenumber" id="phone" placeholder="Enter your phone number">
+
+                <label for="message">Message</label>
+                <textarea name="messagearea" id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer center">
+            <div class="footer-left">
+                <img src="project-assets/logos/circle.svg" alt="circle-logo">
+                <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-right-top">
+                    <p>Team</p>
+                    <p>Services</p>
+                    <p>About Us</p>
+                </div>
+                <div class="footer-right-bottom">
+                    <p>Press</p>
+                    <p>Projects</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
