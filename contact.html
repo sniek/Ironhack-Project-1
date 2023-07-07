@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Circle</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
     <header class="center">
         <nav class="navbar">
@@ -13,7 +15,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="project.html">Project</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="index.html#services">Services</a></li>
             </ul>
             <a href="contact.html">
                 <div id="contact-button">
@@ -26,18 +28,27 @@
     <main class="center">
         <div class="contact-container">
             <h1>Contact Us</h1>
-            <form action="">
+            <form action="#" name="contactForm" onsubmit="return validateForm()" method="post">
+
                 <label for="fname">Full Name*</label>
                 <input type="text" name="fullname" id="fname" placeholder="Enter your full name">
+                <div id="email-container">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                </div>
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <div id="phone-container">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                </div>
 
-                <label for="phone">Phone</label>
-                <input type="number" name="phonenumber" id="phone" placeholder="Enter your phone number">
+                <div id="message-container">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Write your message here..."></textarea>
+                </div>
 
-                <label for="message">Message</label>
-                <textarea name="messagearea" id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                <button>Submit</button>
             </form>
         </div>
     </main>
@@ -49,14 +60,16 @@
                 <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p>
             </div>
             <div class="footer-right">
-                <div class="footer-right-top">
+                <div class="footer-right-left">
                     <p>Team</p>
-                    <p>Services</p>
-                    <p>About Us</p>
-                </div>
-                <div class="footer-right-bottom">
                     <p>Press</p>
+                </div>
+                <div class="footer-right-middle">
+                    <p>Services</p>
                     <p>Projects</p>
+                </div>
+                <div class="footer-right-right">
+                    <p>About Us</p>
                     <p>Privacy Policy</p>
                 </div>
             </div>
@@ -65,4 +78,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

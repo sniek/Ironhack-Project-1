@@ -1,1 +1,6 @@
-# Ironhack-Project-1
+# Ironhack Midterm Project
+
+## Changelog
+
+## Bonus
+
